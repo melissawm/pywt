@@ -32,7 +32,7 @@ maintainers = [
 description = "PyWavelets, wavelet transform module"
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.23,<3"]
-readme = "README.rst"
+readme = "README.md"
 classifiers = [
     "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Developers",

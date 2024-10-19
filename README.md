@@ -1,36 +1,13 @@
-+---------------+-----------------+
-| Service       | Master branch   |
-+===============+=================+
-| GitHub        | |ghactions_ci|  |
-+---------------+-----------------+
-| Appveyor      | |appveyor_ci|   |
-+---------------+-----------------+
-| Read the Docs | |read_the_docs| |
-+---------------+-----------------+
+| Service       | Main branch   |
+----------------|------------------
+| GitHub        | [![Build Status](https://github.com/PyWavelets/pywt/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/PyWavelets/pywt/actions/workflows/tests.yml?query=branch%3Amain) |
+| Appveyor      | [![Appveyor Status](https://ci.appveyor.com/api/projects/status/github/PyWavelets/pywt)](https://ci.appveyor.com/project/PyWavelets/pywt) |
+| Read the Docs | [![Documentation Status](https://readthedocs.org/projects/pywavelets/badge/?version=latest)](https://pywavelets.readthedocs.io/en/latest/?badge=latest) |
+---------------------------------
 
+# PyWavelets
 
-.. |ghactions_ci| image:: https://github.com/PyWavelets/pywt/actions/workflows/tests.yml/badge.svg?branch=main
-   :alt: Build Status
-   :target: https://github.com/PyWavelets/pywt/actions/workflows/tests.yml?query=branch%3Amain
-
-.. |appveyor_ci| image:: https://ci.appveyor.com/api/projects/status/github/PyWavelets/pywt
-   :align: middle
-   :target: https://ci.appveyor.com/project/PyWavelets/pywt
-   :alt: Appveyor Status
-
-.. |read_the_docs| image:: https://readthedocs.org/projects/pywavelets/badge/?version=latest
-   :align: middle
-   :target: https://pywavelets.readthedocs.io/en/latest/?badge=latest
-   :alt: Documentation Status
-
-
-PyWavelets
-==========
-
-.. contents::
-
-What is PyWavelets
-------------------
+## What is PyWavelets
 
 PyWavelets is a free Open Source library for wavelet transforms in Python.
 Wavelets are mathematical basis functions that are localized in both time and
@@ -47,27 +24,25 @@ The main features of PyWavelets are:
   * 1D and 2D Wavelet Packet decomposition and reconstruction
   * 1D Continuous Wavelet Transform
   * Computing Approximations of wavelet and scaling functions
-  * Over 100 `built-in wavelet filters`_ and support for custom wavelets
+  * Over 100 [built-in wavelet filters](http://wavelets.pybytes.com/) and support for custom wavelets
   * Single and double precision calculations
   * Real and complex calculations
   * Results compatible with Matlab Wavelet Toolbox (TM)
 
 
-Documentation
--------------
+## Documentation
 
 Documentation with detailed examples and links to more resources is available
 online at http://pywavelets.readthedocs.org.
 
-For more usage examples see the `demo`_ directory in the source package.
+For more usage examples see the [demo directory](https://github.com/PyWavelets/pywt/tree/main/demo) in the source package.
 
 
-Installation
-------------
+## Installation
 
-PyWavelets supports `Python`_ >=3.10, and is only dependent on `NumPy`_
+PyWavelets supports [Python](http://python.org/) >=3.10, and is only dependent on [NumPy](https://www.numpy.org)
 (supported versions are currently ``>= 1.23.0``). To pass all of the tests,
-`Matplotlib`_ is also required. `SciPy`_ is also an optional dependency. When
+[Matplotlib](http://matplotlib.org) is also required. [SciPy](https://www.scipy.org) is also an optional dependency. When
 present, FFT-based continuous wavelet transforms will use FFTs from SciPy
 rather than NumPy.
 
@@ -77,7 +52,7 @@ installation with::
 
     pip install PyWavelets
 
-Users of the Anaconda_ Python distribution may wish to obtain pre-built
+Users of the [Anaconda](https://www.anaconda.com) Python distribution may wish to obtain pre-built
 Windows, Intel Linux or macOS / OSX binaries from the conda-forge channel.
 This can be done via::
 
@@ -89,29 +64,28 @@ tend to be moderately out of date.  Query your Linux package manager tool for
 package name.
 
 If you want or need to install from source, you will need a working C compiler
-(any common one will work) and a recent version of `Cython`_.  Navigate to the
+(any common one will work) and a recent version of [Cython](http://cython.org/).  Navigate to the
 PyWavelets source code directory (containing ``pyproject.toml``) and type::
 
     pip install .
 
-The most recent *development* version can be found on GitHub at
+The most recent _development_ version can be found on GitHub at
 https://github.com/PyWavelets/pywt.
 
 The latest release, including source and binary packages for Intel Linux,
-macOS and Windows, is available for download from the `Python Package Index`_.
-You can find source releases at the `Releases Page`_.
+macOS and Windows, is available for download from the [Python Package Index](http://pypi.python.org/pypi/PyWavelets/).
+You can find source releases at the [Releases Page](https://github.com/PyWavelets/pywt/releases).
 
-State of development & Contributing
------------------------------------
+## State of development & Contributing
 
 PyWavelets started in 2006 as an academic project for a master thesis
-on `Analysis and Classification of Medical Signals using Wavelet Transforms`
-and was maintained until 2012 by its `original developer`_.  In 2013
-maintenance was taken over in a `new repo <https://github.com/PyWavelets/pywt>`_)
+on _Analysis and Classification of Medical Signals using Wavelet Transforms_
+and was maintained until 2012 by its [original developer](http://en.ig.ma).  In 2013
+maintenance was taken over in a [new repo](https://github.com/PyWavelets/pywt)
 by a larger development team - a move supported by the original developer.
 The repo move doesn't mean that this is a fork - the package continues to be
 developed under the name "PyWavelets", and released on PyPi and Github (see
-`this issue <https://github.com/nigma/pywt/issues/13>`_ for the discussion
+[this issue](https://github.com/nigma/pywt/issues/13) for the discussion
 where that was decided).
 
 All contributions including bug reports, bug fixes, new feature implementations
@@ -119,18 +93,16 @@ and documentation improvements are welcome.  Moreover, developers with an
 interest in PyWavelets are very welcome to join the development team!
 
 As of 2019, PyWavelets development is supported in part by Tidelift.
-`Help support PyWavelets with the Tidelift Subscription <https://tidelift.com/subscription/pkg/pypi-pywavelets?utm_source=pypi-pywavelets&utm_medium=referral&utm_campaign=readme>`_
+[Help support PyWavelets with the Tidelift Subscription](https://tidelift.com/subscription/pkg/pypi-pywavelets?utm_source=pypi-pywavelets&utm_medium=referral&utm_campaign=readme)
 
 
-Contact
--------
+## Contact
 
-Use `GitHub Issues`_ or the `mailing list`_ to post your comments or questions.
+Use [GitHub Issues](https://github.com/PyWavelets/pywt/issues) or the [mailing list](http://groups.google.com/group/pywavelets) to post your comments or questions.
 
 **Report a security vulnerability:** https://tidelift.com/security
 
-License
--------
+## License
 
 PyWavelets is a free Open Source software released under the MIT license.
 
@@ -144,20 +116,4 @@ Specific releases can also be cited via Zenodo. The DOI below will correspond
 to the most recent release. DOIs for past versions can be found by following
 the link in the badge below to Zenodo:
 
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1407171.svg
-   :target: https://doi.org/10.5281/zenodo.1407171
-
-.. _built-in wavelet filters: http://wavelets.pybytes.com/
-.. _Cython: http://cython.org/
-.. _demo: https://github.com/PyWavelets/pywt/tree/main/demo
-.. _Anaconda: https://www.continuum.io
-.. _GitHub: https://github.com/PyWavelets/pywt
-.. _GitHub Issues: https://github.com/PyWavelets/pywt/issues
-.. _NumPy: https://www.numpy.org
-.. _SciPy: https://www.scipy.org
-.. _original developer: http://en.ig.ma
-.. _Python: http://python.org/
-.. _Python Package Index: http://pypi.python.org/pypi/PyWavelets/
-.. _mailing list: http://groups.google.com/group/pywavelets
-.. _Releases Page: https://github.com/PyWavelets/pywt/releases
-.. _Matplotlib: http://matplotlib.org
+[![DOI: 10.5281/zenodo.1407171](https://zenodo.org/badge/DOI/10.5281/zenodo.1407171.svg)](https://doi.org/10.5281/zenodo.1407171)

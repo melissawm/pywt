@@ -1,20 +1,6 @@
-PyWavelets - Wavelet Transforms in Python
-=========================================
+# PyWavelets - Wavelet Transforms in Python
 
-Contents
---------
-
-.. toctree::
-    :maxdepth: 1
-
-    install
-    ref/index
-    regression/index
-    contributing
-    dev/index
-    releasenotes
-
-.. include:: common_refs.rst
+## Contents
 
 PyWavelets is open source wavelet transform software for Python_. It combines
 a simple high level interface with low level C and Cython performance.
@@ -22,20 +8,22 @@ a simple high level interface with low level C and Cython performance.
 PyWavelets is very easy to use and get started with. Just install the package,
 open the Python interactive shell and type:
 
-.. code-block:: python
-
-  import pywt
-  cA, cD = pywt.dwt([1, 2, 3, 4], 'db1')
+```python
+import pywt
+cA, cD = pywt.dwt([1, 2, 3, 4], 'db1')
+```
 
 Voilà! Computing wavelet transforms has never been so simple :)
 
 Here is a slightly more involved example of applying a digital wavelet
 transform to an image:
 
-.. plot:: pyplots/camera_approx_detail.py
+```python
+# mkdocs: render
+{% include "pyplots/camera_approx_detail.py" %}
+```
 
-Main features
--------------
+## Main features
 
 The main features of PyWavelets are:
 
@@ -51,34 +39,27 @@ The main features of PyWavelets are:
 * Results compatible with Matlab Wavelet Toolbox (TM)
 
 
-Getting help
-------------
+## Getting help
 
-Use `GitHub Issues`_, `StackOverflow`_, or the `PyWavelets discussions group`_
+Use [GitHub Issues](https://github.com/PyWavelets/pywt/issues), [StackOverflow](https://stackoverflow.com), or the [PyWavelets discussions group](http://groups.google.com/group/pywavelets)
 to post your comments or questions.
 
-License
--------
+## License
 
 PyWavelets is a free Open Source software released under the MIT license.
 
-Citing
-------
+## Citing
 
 If you use PyWavelets in a scientific publication, we would appreciate
 citations of the project via the following
 JOSS publication:
 
-  Gregory R. Lee, Ralf Gommers, Filip Wasilewski, Kai Wohlfahrt, Aaron
-  O'Leary (2019). PyWavelets: A Python package for wavelet analysis. Journal
-  of Open Source Software, 4(36), 1237, https://doi.org/10.21105/joss.01237.
+> Gregory R. Lee, Ralf Gommers, Filip Wasilewski, Kai Wohlfahrt, Aaron O'Leary (2019). PyWavelets: A Python package for wavelet analysis. Journal of Open Source Software, 4(36), 1237, https://doi.org/10.21105/joss.01237.
 
-.. image:: http://joss.theoj.org/papers/10.21105/joss.01237/status.svg
-   :target: https://doi.org/10.21105/joss.01237
+[![Link to JOSS paper](http://joss.theoj.org/papers/10.21105/joss.01237/status.svg)](https://doi.org/10.21105/joss.01237)
 
 Specific releases can also be cited via Zenodo. The DOI below will correspond
 to the most recent release. DOIs for past versions can be found by following
 the link in the badge below to Zenodo:
 
-.. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1407171.svg
-   :target: https://doi.org/10.5281/zenodo.1407171
+[![DOI: 10.5281/zenodo.1407171](https://zenodo.org/badge/DOI/10.5281/zenodo.1407171.svg)](https://doi.org/10.5281/zenodo.1407171)

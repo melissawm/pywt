@@ -21,4 +21,3 @@ for i, a in enumerate([LL, LH, HL, HH]):
     ax.set_yticks([])
 
 fig.tight_layout()
-plt.show()

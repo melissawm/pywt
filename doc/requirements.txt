@@ -1,0 +1,5 @@
+mkdocs-matplotlib
+mkdocs-material
+mkdocs-include-markdown-plugin
+pygments
+pymdown-extensions

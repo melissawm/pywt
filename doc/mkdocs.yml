@@ -1,0 +1,21 @@
+site_name: PyWavelets Documentation
+site_url: https://pywavelets.readthedocs.io
+theme:
+  name: material
+
+docs_dir: source
+
+plugins:
+  - mkdocs_matplotlib
+  - include-markdown
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+nav:
+  - index.md

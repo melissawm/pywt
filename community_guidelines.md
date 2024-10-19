@@ -1,8 +1,6 @@
-Community Guidelines
-====================
+# Community Guidelines
 
-or How We Work (Together)
--------------------------
+## or How We Work (Together)
 
 PyWavelets has adopted a set of community guidelines in common with the
 scikit-image project.
