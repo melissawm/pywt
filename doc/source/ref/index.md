@@ -1,9 +1,7 @@
-.. _ref-index:
+# API Reference
 
-API Reference
-=============
-
-.. toctree::
+::: pywt
+<!-- .. toctree::
    :maxdepth: 2
 
    wavelets
@@ -20,4 +18,4 @@ API Reference
    wavelet-packets
    cwt
    thresholding-functions
-   other-functions
+   other-functions -->

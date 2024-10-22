@@ -3,3 +3,5 @@ mkdocs-material
 mkdocs-include-markdown-plugin
 pygments
 pymdown-extensions
+mkdocstrings-python
+griffe

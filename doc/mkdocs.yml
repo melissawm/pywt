@@ -2,6 +2,12 @@ site_name: PyWavelets Documentation
 site_url: https://pywavelets.readthedocs.io
 theme:
   name: material
+  features:
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - toc.follow
 
 docs_dir: source
 
@@ -9,6 +15,10 @@ plugins:
   - mkdocs_matplotlib
   - include-markdown
   - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [../pywt]
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -16,6 +26,11 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
+  - admonition
+  - pymdownx.details
 
 nav:
-  - index.md
+  - Home: index.md
+  - install.md
+  - ref/index.md
+  - dev/index.md
